@@ -1,0 +1,10 @@
+// 设备适配混入
+.device-mx(@devices, @rem-percent, @current: 1) when(@current <= length(@devices)) {
+    @media (min-width: extract(@devices, @current)) {
+        html {
+            font-size: extract(@devices, @current) * @rem-percent;
+        }
+    }
+
+    .device-mx(@devices, @rem-percent, @current + 1);
+}

@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "hqms上报数据下载服务器端应用程序",
+  "main": "index.js",
+  "scripts": {
+    "go": "node ./index"
+  },
+  "keywords": [
+    "hqms",
+    "csv",
+    "download",
+    "directive",
+    "multiples"
+  ],
+  "author": "Alex liao",
+  "license": "ISC",
+  "dependencies": {
+    "async-series-each": "^1.0.2",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "new-promiseify": "^1.1.1",
+    "oracledb": "^3.1.2"
+  }
+}

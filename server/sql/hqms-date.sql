@@ -1,0 +1,1 @@
+a.出院日期 between to_date(:startDate, 'YYYY-MM-DD HH24:MI:SS') and to_date(:endDate, 'YYYY-MM-DD HH24:MI:SS')

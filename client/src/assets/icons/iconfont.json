@@ -1,0 +1,58 @@
+{
+  "id": "1443071",
+  "name": "hqms-csv",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "887861",
+      "name": "download",
+      "font_class": "-download",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "1790031",
+      "name": "CSV",
+      "font_class": "-csv",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "7008905",
+      "name": "close",
+      "font_class": "-close",
+      "unicode": "e6e9",
+      "unicode_decimal": 59113
+    },
+    {
+      "icon_id": "7213640",
+      "name": "Document",
+      "font_class": "-document",
+      "unicode": "e689",
+      "unicode_decimal": 59017
+    },
+    {
+      "icon_id": "7766803",
+      "name": "icon_study",
+      "font_class": "-learn",
+      "unicode": "eba0",
+      "unicode_decimal": 60320
+    },
+    {
+      "icon_id": "8804726",
+      "name": "hospital",
+      "font_class": "-hid",
+      "unicode": "e8ef",
+      "unicode_decimal": 59631
+    },
+    {
+      "icon_id": "10043856",
+      "name": "Date",
+      "font_class": "-date",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    }
+  ]
+}

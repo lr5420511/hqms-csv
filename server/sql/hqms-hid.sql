@@ -1,0 +1,1 @@
+regexp_like(a.住院号, :hids)
