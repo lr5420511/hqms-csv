@@ -16,6 +16,7 @@
                                 :data="source"
                                 :name="documentName">
                 <i class="iconfont icon-download"
+                   ref="download"
                    @click="documentDownload"
                 ></i>
             </com-csv-downloader>
@@ -42,6 +43,10 @@ export default {
             default: 0,
             validator: val => val >= 0 && Math.floor(val) === val
         },
+        autoDownload: {
+            type: Boolean,
+            default: true
+        },
         source: {
             type: Array,
             default: () => []
@@ -60,6 +65,13 @@ export default {
         },
         documentDownload: function() {
             this.$emit('emitDocumentDownload', this);
+        }
+    },
+    watch: {
+        source: function(val) {
+            val.length && this.autoDownload && (
+                this.$nextTick(() => this.$refs.download.click())
+            );
         }
     }
 };
