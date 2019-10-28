@@ -18,7 +18,7 @@ const conf = module.exports = {
         publicPath: 'build',
         filename: '[name].js'
     },
-    devtool: prod ? 'source-map' : 'inline-source-map',
+    devtool: prod ? false : 'inline-source-map',
     devServer: { historyApiFallback: { index: './index.html' } },
     module: {
         rules: [
@@ -65,7 +65,7 @@ if(prod) {
     conf.optimization = {
         minimizer: [
             new UglifyjsWP({
-                sourceMap: true,
+                sourceMap: false,
                 test: /\.js$/i,
                 include: ['/node_modules/']
             })
