@@ -24,7 +24,8 @@ const conf = module.exports = {
         rules: [
             {
                 test: /\.js$/i,
-                loader: ['babel-loader']
+                loader: ['babel-loader'],
+                include: [/node_modules/]
             },
             {
                 test: /\.vue$/i,
@@ -66,8 +67,7 @@ if(prod) {
         minimizer: [
             new UglifyjsWP({
                 sourceMap: false,
-                test: /\.js$/i,
-                include: ['/node_modules/']
+                test: /\.js$/i
             })
         ]
     };
