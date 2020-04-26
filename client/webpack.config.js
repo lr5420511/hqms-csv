@@ -25,7 +25,7 @@ const conf = module.exports = {
             {
                 test: /\.js$/i,
                 loader: ['babel-loader'],
-                include: [/node_modules/]
+                exclude: [/node_modules/]
             },
             {
                 test: /\.vue$/i,
